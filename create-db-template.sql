@@ -125,5 +125,54 @@ SELECT * FROM branch_supplier;
 
 --QUERIES
 
+SHOW DATABASES;
+
+USE zebra;
+
+SHOW TABLES;
+
+
+DESC employee;
+
+
+SELECT *
+FROM employee;
+
+SELECT *
+FROM employee
+ORDER BY salary;
+
+SELECT * 
+FROM employee
+ORDER BY salary DESC;
+
+SELECT *
+FROM employee
+ORDER BY sex , first_name , second_name;
+
+SELECT * 
+FROM employee
+LIMIT 5;
+
+SELECT first_name, second_name
+FROM employee;
+
+SELECT first_name AS foreName, second_name AS SurName
+FROM employee;
+
+
+SELECT DISTINCT sex     
+FROM employee;
+
+SELECT COUNT(emp_id)
+FROM employee;
+
+SELECT COUNT(emp_id)
+FROM employee
+WHERE sex= 'F' AND birth_date >'1970-01-01';
+
+
+
+
 
 
